@@ -1,0 +1,151 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+    width: 100%;
+    height: auto;
+    background-color: var(--background-color-nav);
+    color: var(--color-nav);
+}
+
+.Header-logo {
+    width: 220px;
+    padding: 0 20px;
+}
+
+.Links {
+    width: auto;
+}
+
+.Links-span {
+    color: #b7a865;
+    margin: 0 10px;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.Links-explore {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Links-ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    text-align: center;
+    margin: 0;
+}
+
+.Links-li {
+    margin: 0 10px;
+    width: auto;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 700;
+    font-family: var(--font-nav);
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.Links-li:hover{
+    color: #FFC23C;
+}
+
+.isOtherColor {
+    color: #7b7e8b;
+}
+
+.isOtherColor i {
+    margin: 0 10px;
+}
+
+.Nav {
+    height: 100%;
+    width: auto;
+    margin: 0 20px;
+}
+
+.Nav-explore {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Nav-ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+}
+
+.Nav-li {
+    margin: 10px;
+    width: auto;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--background-color-btn);
+    border-radius: 5px;
+    color: var(--color-nav);
+    font-size: 1.2em;
+    font-weight: 700;
+    font-family: var(--font-nav);
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.Nav-li:hover {
+    background-color: #47cf73;
+    color: #000;
+}
+
+.Nav-li:hover>.isColor {
+    color: #395144;
+}
+
+.isNone {
+    background-color: var(--background-color-nav);
+    font-size: 1.7em;
+    color: #7b7e8b;
+    margin: 0;
+    transition: all 0.5s ease;
+}
+
+.isNone:hover{
+    color: #47cf73;
+    background-color: var(--background-color-nav);
+}
+
+.isColor {
+    color: #47cf73;
+    margin: 0 10px;
+}
+
+@media all and (max-width: 900px) {
+    .Header {
+        flex-flow: column nowrap;
+    }
+
+    .Header-logo {
+        padding: 0;
+        margin: 10px;
+    }
+
+    .Links {
+        padding: 0;
+        margin: 10px 0;
+    }
+
+    .Nav {
+        padding: 0;
+        margin: 10px 0;
+    }
+
+    .Nav-ul {
+        flex-flow: column nowrap;
+    }
+}

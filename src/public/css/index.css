@@ -1,0 +1,144 @@
+@import url(reset.css);
+@import url(nav.css);
+@import url(footer.css);
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Mono&display=swap');
+
+:root {
+    --background-color-nav: #000;
+    --color-nav: #fff;
+    --background-color-btn: #36383f;
+    --font-nav: "Lato", sans-serif;
+    --color-text: #fff;
+    --color-principal: rgb(199, 201, 211);
+    --font-principal: "Lato", sans-serif;
+    --background-color-footer: #191a1d;
+}
+
+.Main-container {
+    height: 100%;
+    background: linear-gradient(100deg, #3f434d 0%, #3f434d 20%, #000 100%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    padding: 40px 0 40px 40px;
+}
+
+.Main-contents {
+    padding: 20px 0;
+    width: 100%;
+    height: 100%;
+}
+
+.Main-h1 {
+    color: var(--color-principal);
+    font-weight: 400;
+    font-size: 40px;
+    width: 100%;
+    padding: 20px;
+}
+
+.isWhite {
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
+
+.Main-p {
+    font-size: 30px;
+    color: var(--color-principal);
+    font-weight: 400;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.Main-buttons {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+    margin: 20px 0;
+}
+
+.Main-button {
+    font-size: 2em;
+    padding: 17px 15px;
+    border-radius: 2px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.isSign {
+    background-color: #47cf73;
+    color: #000;
+    transition: all 1s ease;
+}
+
+.isSign:hover {
+    background-color: #000;
+    color: #fff;
+    box-shadow: -1px 0px 12px 2px rgba(250, 250, 250, 1);
+    transform: scale(0.9);
+}
+
+.isMore {
+    background-color: #000;
+    color: #fff;
+    transition: all 1s ease;
+}
+
+.isMore:hover {
+    background-color: #fff;
+    color: #000;
+    box-shadow: -1px 0px 12px 2px #47cf73;
+    transform: scale(0.9);
+}
+
+/* SECOND COLUMN */
+.Main-picture {
+    grid-area: 1/2;
+}
+
+.Main-picture {
+    background: 0 0;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    min-height: 500px;
+    margin-top: 40px;
+}
+
+.Main-img {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+
+}
+
+.Main-span {
+    color: var(--color-text);
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 20px;
+}
+
+.isColorCodePen {
+    color: #76d5e4;
+    margin: 0;
+}
+
+@media all and (max-width: 950px) {
+    .Main-container {
+        display: flex;
+        align-items: center;
+        flex-flow: column nowrap;
+    }
+
+    .Main-contents,
+    .Main-picture {
+        margin: 0;
+        padding: 0;
+        height: auto;
+    }
+}
