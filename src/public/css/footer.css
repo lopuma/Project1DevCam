@@ -1,7 +1,9 @@
 .Footer {
-    background-color: var(--background-color-footer);
-    height: 150px;
-    margin-top: auto;
+    background: linear-gradient(100deg, #3f434d 0%, #3f434d 20%, #000 100%);
+    height: 100%;
+    margin: 2em 0;
+    position: relative;
+    top: calc(100% - 2em);
 }
 
 .Footer-nav {
@@ -9,9 +11,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 60px;
     width: 100%;
-    background-color: var(--background-color-btn);
     color: #fff;
 }
 
@@ -50,8 +50,20 @@
     font-size: 1.3em;
 }
 
-@media all and (max-width: 950px) {
+@media screen and (max-width: 900px) {
     .Footer-ul {
         flex-flow: row wrap;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .Footer {
+        margin: 0;
+    }
+
+    .Footer-li{
+        border-radius: 5px;
+        padding: .5em;
+        margin: .5em;
     }
 }

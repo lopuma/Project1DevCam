@@ -12,17 +12,15 @@ li {
 
 html {
     scroll-behavior: smooth;
-    background: linear-gradient(100deg, #3f434d 0%, #3f434d 20%, #000 100%);
-    min-height: 100vh;
     width: 100%;
+    font-size: 100%;
+    height: 10vh;
 }
 
 body {
     width: 100%;
-    height: 100%;
-    font-size: 100%;
+    font-size: 1em;
     font-family: var(--font-principal);
-    background: linear-gradient(100deg, #3f434d 0%, #3f434d 20%, #000 100%);
 }
 
 .Header{
@@ -42,4 +40,6 @@ body {
         'header'
         'main'
         'footer';
+    background: linear-gradient(100deg, #3f434d 0%, #3f434d 20%, #000 100%);
+    height: 100%;
 }
